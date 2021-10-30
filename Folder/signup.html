@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <script src="app.js">
+</script>
+<title>
+LPU
+</title>
+</head>
+<body onload="user()">
+<header>
+         <nav class="sticky">
+             <div class="row">
+                 <img src="logo.png" alt="logo" class="logo">
+                 <ul class="main-nav">
+                    <li><a class="hide" id="username" href="index.html">Username</a></li>
+                     <li ><a class="hide" id="logout" onclick="logout()" href="index.html">Log Out</a></li>
+                     <li><a id="signin" href="signup.html">Sign Up</a></li>
+                     <li><a id="login" href="login.html">Login</a></li>
+                  </ul>
+             </div>
+         </nav>
+</header>
+<section class="section-sign " id="plans">
+            <div class="row">
+                 <h2>Sign Up</h2>
+            </div>
+<div class="row">
+                <div class="signup-box">
+                                 <form onsubmit= "return signup()" action="login.html">
+                                        <center>
+                                                  <input placeholder="Username" type="text" id="userid"/><br><br><br>
+                                                   <input placeholder="Address" type="text" id="address"/><br><br><br>
+                                                  <input placeholder="Password" type="password" id="pswrd"/><br><br><br>
+                                                  <input placeholder="Confirm Password" type="password" id="cpswrd"/><br><br><br>
+                                                  <input class="btn btn-full" type="submit"  value="SIGN IN"/><br><br><br>
+                                                  <input class="btn btn-full" type="reset" value="CANCEL"/><br><br><br>
+                                        </center>
+                                    </form>
+                </div>
+            </div>      
+            </section>
+</body>
+</html>
